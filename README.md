@@ -1,6 +1,10 @@
 # TSkin
  采用ATL实现的窗体换肤的COM DLL，扁平化效果，简单易用。   
+<<<<<<< HEAD
 The com DLL of window skin changing realized by ATL is flat and easy to use.   
+=======
+ The com DLL of window skin changing realized by ATL is flat and easy to use.   
+>>>>>>> b78665add9348160420e22ca838ec4ac16e40a0e
    
 支持的功能：   
 设置标题栏文本颜色(TitleColor)   
@@ -28,13 +32,9 @@ Visual Studio 2019
 如果你嫌繁琐则自己手工构造工程文件。   
    
 测试效果:   
-获得焦点   
-![image](https://github.com/bzmework/TSkin/blob/master/test1.jpg)      
-失去焦点    
-![image](https://github.com/bzmework/TSkin/blob/master/test2.jpg)    
-窗口透明   
+![image](https://github.com/bzmework/TSkin/blob/master/test1.jpg)       
+![image](https://github.com/bzmework/TSkin/blob/master/test2.jpg)     
 ![image](https://github.com/bzmework/TSkin/blob/master/test3.jpg)    
-自定义   
 ![image](https://github.com/bzmework/TSkin/blob/master/test4.jpg)    
    
 DLL发布在：Project\ReleaseMinDependency   
