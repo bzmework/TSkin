@@ -28,13 +28,9 @@ Visual Studio 2019
 如果你嫌繁琐则自己手工构造工程文件。   
    
 测试效果:   
-获得焦点   
-![image](https://github.com/bzmework/TSkin/blob/master/test1.jpg)      
-失去焦点    
-![image](https://github.com/bzmework/TSkin/blob/master/test2.jpg)    
-窗口透明   
+![image](https://github.com/bzmework/TSkin/blob/master/test1.jpg)       
+![image](https://github.com/bzmework/TSkin/blob/master/test2.jpg)     
 ![image](https://github.com/bzmework/TSkin/blob/master/test3.jpg)    
-自定义   
 ![image](https://github.com/bzmework/TSkin/blob/master/test4.jpg)    
    
 DLL发布在：TSkin\Project\ReleaseMinDependency   
