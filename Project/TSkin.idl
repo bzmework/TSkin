@@ -1,0 +1,105 @@
+// TSkin.idl : IDL source for TSkin.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (TSkin.tlb) and marshalling code.
+
+	import "oaidl.idl";
+	import "ocidl.idl";
+
+	[
+		object,
+		uuid(BEEFEC8A-6B26-4444-9B9E-6D7B94BC1158),
+		dual,
+		helpstring("ISkin Interface"),
+		pointer_default(unique)
+	]
+	interface ISkin : IDispatch
+	{
+		[v1_enum, helpstring("阴影类型")]
+		typedef enum ShadowTypeConstants
+		{	
+			[helpstring("缺省阴影(阴影在右边和底边))")] 
+			stNoneShadow = 0,
+			[helpstring("缺省阴影(阴影在右边和底边))")] 
+			stDefaultShadow = 1,
+			[helpstring("完全(阴影在上下左右四边)")] 
+			stFullShadow = 2
+		} ShadowTypeConstants;
+
+		[id(0), helpstring("关于")] HRESULT AboutMe();
+
+		[id(1), helpstring("应用皮肤")] HRESULT ApplySkin([in] long hWnd, [out, retval] VARIANT_BOOL *pRetVal);
+
+		[propget, id(2), helpstring("返回/设置标题栏文本颜色")] HRESULT TitleColor([out, retval] OLE_COLOR *pVal);
+		[propput, id(2), helpstring("返回/设置标题栏文本颜色")] HRESULT TitleColor([in, defaultvalue(0xFFFFFF)] OLE_COLOR newVal);
+		
+		[propget, id(3), helpstring("返回/设置标题栏渐变开始色")] HRESULT GradientBeginColor([out, retval] OLE_COLOR *pVal);
+		[propput, id(3), helpstring("返回/设置标题栏渐变开始色")] HRESULT GradientBeginColor([in, defaultvalue(0x000000)] OLE_COLOR newVal);
+
+		[propget, id(4), helpstring("返回/设置标题栏渐变结束色")] HRESULT GradientEndColor([out, retval] OLE_COLOR *pVal);
+		[propput, id(4), helpstring("返回/设置标题栏渐变结束色")] HRESULT GradientEndColor([in, defaultvalue(0x666666)] OLE_COLOR newVal);
+
+		[propget, id(5), helpstring("返回/设置窗口背景色")] HRESULT BackColor([out, retval] OLE_COLOR *pVal);
+		[propput, id(5), helpstring("返回/设置窗口背景色")] HRESULT BackColor([in, defaultvalue(0xE8DDCF)] OLE_COLOR newVal);
+
+		[propget, id(6), helpstring("返回/设置标题栏高度,取值范围:16-64,默认值:22")] HRESULT TitleBarHeight([out, retval] long *pVal);
+		[propput, id(6), helpstring("返回/设置标题栏高度,取值范围:16-64,默认值:22")] HRESULT TitleBarHeight([in, defaultvalue(22)] long newVal);
+
+		[propget, id(7), helpstring("返回/设置边框宽度,取值范围:1-8,默认值:3")] HRESULT BorderWidth([out, retval] long *pVal);
+		[propput, id(7), helpstring("返回/设置边框宽度,取值范围:1-8,默认值:3")] HRESULT BorderWidth([in, defaultvalue(3)] long newVal);
+		
+		[propget, id(8), helpstring("返回/设置窗口透明度,取值范围:0-255,默认值:100")] HRESULT Alpha([out, retval] unsigned char *pVal);
+		[propput, id(8), helpstring("返回/设置窗口透明度,取值范围:0-255,默认值:100")] HRESULT Alpha([in, defaultvalue(100)] unsigned char newVal);
+		
+		[propget, id(9), helpstring("返回/设置阴影颜色")] HRESULT ShadowColor([out, retval] OLE_COLOR *pVal);
+		[propput, id(9), helpstring("返回/设置阴影颜色")] HRESULT ShadowColor([in, defaultvalue(0x000000)] OLE_COLOR newVal);
+
+		[propget, id(10), helpstring("返回/设置阴影深度,取值范围:0-32,默认值:5")] HRESULT ShadowDepth([out, retval] long *pVal);
+		[propput, id(10), helpstring("返回/设置阴影深度,取值范围:0-32,默认值:5")] HRESULT ShadowDepth([in, defaultvalue(5)] long newVal);
+
+		[propget, id(11), helpstring("返回/设置阴影透明度,取值范围:0-255,默认值:200")] HRESULT ShadowTransparency([out, retval] unsigned char *pVal);
+		[propput, id(11), helpstring("返回/设置阴影透明度,取值范围:0-255,默认值:200")] HRESULT ShadowTransparency([in, defaultvalue(200)] unsigned char newVal);
+		
+		[propget, id(12), helpstring("返回/设置阴影类型")] HRESULT ShadowType([out, retval] ShadowTypeConstants *pVal);
+		[propput, id(12), helpstring("返回/设置阴影类型")] HRESULT ShadowType([in, defaultvalue(stDefaultShadow)] ShadowTypeConstants newVal);
+
+		[propget, id(13), helpstring("返回/设置是否显示最小化按钮")] HRESULT ShowMinButton([out, retval] VARIANT_BOOL *pVal);
+		[propput, id(13), helpstring("返回/设置是否显示最小化按钮")] HRESULT ShowMinButton([in, defaultvalue(TRUE)] VARIANT_BOOL newVal);
+
+		[propget, id(14), helpstring("返回/设置是否显示最大化按钮")] HRESULT ShowMaxButton([out, retval] VARIANT_BOOL *pVal);
+		[propput, id(14), helpstring("返回/设置是否显示最大化按钮")] HRESULT ShowMaxButton([in, defaultvalue(TRUE)] VARIANT_BOOL newVal);
+
+		[propget, id(15), helpstring("返回/设置是否显示帮助按钮")] HRESULT ShowHelpButton([out, retval] VARIANT_BOOL *pVal);
+		[propput, id(15), helpstring("返回/设置是否显示帮助按钮")] HRESULT ShowHelpButton([in, defaultvalue(TRUE)] VARIANT_BOOL newVal);
+
+		[propget, id(16), helpstring("返回/设置关闭按钮颜色, -1表示透明")] HRESULT CloseButtonColor([out, retval] OLE_COLOR *pVal);
+		[propput, id(16), helpstring("返回/设置关闭按钮颜色, -1表示透明")] HRESULT CloseButtonColor([in, defaultvalue(0x0000ff)] OLE_COLOR newVal);
+
+		//[propget, id(17), helpstring("返回/设置是否启用字体平滑, 只有少数字体支持平滑, 例如: Arial,Tahoma,微软雅黑.")] HRESULT FontSmoothing([out, retval] VARIANT_BOOL *pVal);
+		//[propput, id(17), helpstring("返回/设置是否启用字体平滑, 只有少数字体支持平滑, 例如: Arial,Tahoma,微软雅黑.")] HRESULT FontSmoothing([in, defaultvalue(TRUE)] VARIANT_BOOL newVal);
+		
+		[id(18), helpstring("让窗口透明,取值范围:0-255,默认值:200")] HRESULT Transparent([in, defaultvalue(200)] unsigned char nAlpha, [out, retval] VARIANT_BOOL *pVal);
+		[id(19), helpstring("刷新,让设置生效")] HRESULT Refresh();
+		 
+	};
+
+[
+	uuid(6C06AFAC-693E-4EE2-ACB4-850B7C27CEF1),
+	version(1.0),
+	helpstring("eLung Skin Library")
+]
+library TSkin
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(434DACEF-505B-4F50-B728-7AD9EAE83EBD),
+		helpstring("窗口皮肤")
+	]
+	coclass Skin
+	{
+		[default] interface ISkin;
+	};
+};

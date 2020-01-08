@@ -1,0 +1,26 @@
+HKCR
+{
+	TSkin.Skin.1 = s 'Skin Class'
+	{
+		CLSID = s '{434DACEF-505B-4F50-B728-7AD9EAE83EBD}'
+	}
+	TSkin.Skin = s 'Skin Class'
+	{
+		CLSID = s '{434DACEF-505B-4F50-B728-7AD9EAE83EBD}'
+		CurVer = s 'TSkin.Skin.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {434DACEF-505B-4F50-B728-7AD9EAE83EBD} = s 'Skin Class'
+		{
+			ProgID = s 'TSkin.Skin.1'
+			VersionIndependentProgID = s 'TSkin.Skin'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{6C06AFAC-693E-4EE2-ACB4-850B7C27CEF1}'
+		}
+	}
+}

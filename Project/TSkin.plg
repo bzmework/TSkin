@@ -1,0 +1,61 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: TSkin - Win32 Release MinDependency--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP5A6.tmp" with contents
+[
+/nologo /MT /W3 /O1 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "_ATL_STATIC_REGISTRY" /FR"ReleaseMinDependency/" /Fo"ReleaseMinDependency/" /Fd"ReleaseMinDependency/" /FD /c 
+"W:\eLungFan\TSkin\Project\Skin.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP5A6.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP5A7.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib msimg32.lib /nologo /subsystem:windows /dll /incremental:no /pdb:"ReleaseMinDependency/TSkin.pdb" /machine:I386 /def:".\TSkin.def" /out:"ReleaseMinDependency/TSkin.dll" /implib:"ReleaseMinDependency/TSkin.lib" 
+.\ReleaseMinDependency\MemDC.obj
+.\ReleaseMinDependency\ShadowWindow.obj
+.\ReleaseMinDependency\Skin.obj
+.\ReleaseMinDependency\SkinWindow.obj
+.\ReleaseMinDependency\StdAfx.obj
+.\ReleaseMinDependency\TSkin.obj
+.\ReleaseMinDependency\win32gdi.obj
+.\ReleaseMinDependency\TSkin.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP5A7.tmp"
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP5A8.bat" with contents
+[
+@echo off
+regsvr32 /s /c ".\ReleaseMinDependency\TSkin.dll"
+echo regsvr32 exec. time > ".\ReleaseMinDependency\regsvr32.trg"
+]
+Creating command line "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP5A8.bat"
+Compiling...
+Skin.cpp
+Linking...
+   Creating library ReleaseMinDependency/TSkin.lib and object ReleaseMinDependency/TSkin.exp
+<h3>Output Window</h3>
+Performing registration
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP5AC.tmp" with contents
+[
+/nologo /o"ReleaseMinDependency/TSkin.bsc" 
+.\ReleaseMinDependency\StdAfx.sbr
+.\ReleaseMinDependency\MemDC.sbr
+.\ReleaseMinDependency\ShadowWindow.sbr
+.\ReleaseMinDependency\Skin.sbr
+.\ReleaseMinDependency\SkinWindow.sbr
+.\ReleaseMinDependency\TSkin.sbr
+.\ReleaseMinDependency\win32gdi.sbr]
+Creating command line "bscmake.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP5AC.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+TSkin.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
