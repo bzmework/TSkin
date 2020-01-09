@@ -1,10 +1,5 @@
 # TSkin
- 采用ATL实现的窗体换肤的COM DLL，扁平化效果，简单易用。   
-<<<<<<< HEAD
-The com DLL of window skin changing realized by ATL is flat and easy to use.   
-=======
- The com DLL of window skin changing realized by ATL is flat and easy to use.   
->>>>>>> b78665add9348160420e22ca838ec4ac16e40a0e
+ 采用ATL实现的窗体换肤的COM DLL，扁平化效果，简单易用。The com DLL of window skin changing realized by ATL is flat and easy to use.  The com DLL of window skin changing realized by ATL is flat and easy to use.  
    
 支持的功能：   
 设置标题栏文本颜色(TitleColor)   
@@ -24,17 +19,17 @@ The com DLL of window skin changing realized by ATL is flat and easy to use.
 设置关闭按钮颜色(CloseButtonColor)   
 设置是否启用字体平滑,(FontSmoothing) 只有少数字体支持平滑, 例如: Arial,Tahoma,微软雅黑.   
    
+测试效果:   
+![image](https://github.com/bzmework/TSkin/blob/master/test1.jpg)       
+![image](https://github.com/bzmework/TSkin/blob/master/test2.jpg)     
+![image](https://github.com/bzmework/TSkin/blob/master/test3.jpg)    
+![image](https://github.com/bzmework/TSkin/blob/master/test4.jpg)    
+   
 编译环境：   
 Windows 10   
 Visual Studio 2019   
 说明：支持vs6-vs2019所有版本编译，如果你要支持在xp上使用，请采用TSkin.dsw，若有必要则进行升级，   
 升级路线一般是：vs6升级到vs2005进行过渡然后升级到更高版本的vs编译环境，   
 如果你嫌繁琐则自己手工构造工程文件。   
-   
-测试效果:   
-![image](https://github.com/bzmework/TSkin/blob/master/test1.jpg)       
-![image](https://github.com/bzmework/TSkin/blob/master/test2.jpg)     
-![image](https://github.com/bzmework/TSkin/blob/master/test3.jpg)    
-![image](https://github.com/bzmework/TSkin/blob/master/test4.jpg)    
    
 DLL发布在：Project\ReleaseMinDependency   
