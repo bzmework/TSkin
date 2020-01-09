@@ -26,7 +26,7 @@
 ![image](https://github.com/bzmework/TSkin/blob/master/test2.jpg)     
 自定义样式   
 ![image](https://github.com/bzmework/TSkin/blob/master/test3.jpg)    
-仿SAP风格   
+SAP风格   
 ![image](https://github.com/bzmework/TSkin/blob/master/test4.jpg)    
    
 编译环境：   
