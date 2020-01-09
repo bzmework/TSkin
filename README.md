@@ -1,5 +1,5 @@
 # TSkin
- 采用ATL实现的窗体换肤的COM DLL，扁平化效果，简单易用。The com DLL of window skin changing realized by ATL is flat and easy to use.  The com DLL of window skin changing realized by ATL is flat and easy to use.  
+ 采用ATL实现的窗体换肤的COM DLL，扁平化自定义效果，简单易用。The com DLL of window skin changing realized by ATL is flat and easy to use.  The com DLL of window skin changing realized by ATL is flat and easy to use.  
    
 支持的功能：   
 设置标题栏文本颜色(TitleColor)   
