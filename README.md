@@ -20,9 +20,13 @@
 设置是否启用字体平滑,(FontSmoothing) 只有少数字体支持平滑, 例如: Arial,Tahoma,微软雅黑.   
    
 测试效果:   
+获得焦点   
 ![image](https://github.com/bzmework/TSkin/blob/master/test1.jpg)       
+窗口透明   
 ![image](https://github.com/bzmework/TSkin/blob/master/test2.jpg)     
+自定义样式   
 ![image](https://github.com/bzmework/TSkin/blob/master/test3.jpg)    
+仿SAP风格   
 ![image](https://github.com/bzmework/TSkin/blob/master/test4.jpg)    
    
 编译环境：   
